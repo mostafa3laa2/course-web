@@ -1,0 +1,690 @@
+body{
+    width:100%;
+    height:100%;
+    margin: 0;
+}
+
+.login_parent{
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(175, 170, 170, .3);
+    z-index: +6;
+    display: none;
+}
+.login-part{
+    text-align: center;
+    width:30%;
+    height: auto;
+    overflow: hidden;
+    border: 3px solid #ddd;
+    margin:0px auto;
+    margin-top: 80px;
+    border-radius: 2px 10px 10px 10px;
+    position: absolute;
+    position: fixed;
+    top:120pxpx;
+    left: 35%;
+    z-index: +8;
+    background-color: white;
+    box-shadow: 7px 7px 7px 7px rgba(78, 78, 78, 0.3);
+    display: none;
+
+}
+
+.login-part .space{
+    width: 100%;
+    height: 20px;
+}
+
+ .login-part h1{
+    opacity: .7;
+
+}
+
+ .login-part input{
+    width: 90%;
+    height: 33px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+
+}
+.login-part button{
+    width: 100px;
+    height: 33px;
+    background-color: white;
+    color: darkblue;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+
+}
+ .login-part button:hover{
+    background-color:darkblue;
+    color:white;
+
+}
+
+@media only screen and (min-width:320px)  and (max-width:520px) {
+    .login_parent{
+        width: 100%;
+    } 
+    .login_parent .login-part{
+        width: 98%;
+        margin-left: 0px;
+        text-align: center;
+    }
+} 
+
+@media only screen and (min-width:521px)  and (max-width:720px) {
+    .login_parent{
+        width: 100%;
+    } 
+    .login_parent .login-part{
+        width: 70%;
+        margin-left: 15%;
+        text-align: center;
+    }
+}  
+
+@media only screen and (min-width:721px)  and (max-width:1024px) {
+    .login_parent{
+        width: 100%;
+    } 
+    .login_parent .login-part{
+        width: 50%;
+        margin-left: 25%;
+        text-align: center;
+    }
+}                       
+
+.main-intro{
+    position: relative;
+    width: 100%;
+    height: 750px;
+}
+.main-intro img{
+    width: 100%;
+    height:100%;
+}
+
+.main-intro .desc{
+    position: absolute;
+    bottom: 30%;
+    left:5%;
+    z-index: +2;
+    width: 20%;
+  
+    overflow: hidden;
+}
+.main-intro .desc #icon{
+    
+    width: 100%;
+    height: 70%;
+}
+.main-intro .desc #play{
+    width: 80%;
+    z-index: +2;
+}
+.main-intro .desc #play:hover{
+    transform: scale(1.1);
+
+}
+.proudact{
+    width: 100%;
+    height: auto;
+   
+    margin-top: 10px;
+    
+}
+.proudact .info{
+    width: 30%;
+    height: 300px;
+    
+    float: left;
+}
+.proudact .info h1{
+    color: rgb(8, 8, 68);
+    text-align: center;
+    opacity: .9;
+    margin-top:100px;
+    font-size: xx-large;
+}
+.proudact .info img{
+margin-left: 25%;
+margin-top: 10%;
+opacity: .8;
+}
+.proudact .info img:hover{
+cursor: pointer;
+opacity: 1;
+transform: scale(1.1);
+}
+.proudact .info2{
+    width: 70%;
+    height: 300px;
+}
+
+.about-us{
+    width: 100%;
+    height: auto;
+    
+    margin-top: 10px;
+}
+.about-us .line{
+    width: 100px;
+    height: 3px;
+    background-color: teal;
+    margin-left: 46%;
+    margin-top: -10px;
+}
+.about-us h1{
+    font-size: 45px;
+    color:rgb(8, 8, 68) ;
+    text-align: center;
+    margin-top: 3%;
+    opacity: .9;
+}
+.about-us img{
+    width: 400px;
+    height: 300px;
+    margin-top:40px;
+    margin-left: 5%;
+}
+.about-us .info{
+    width: 60%;
+    height: 300px;
+   
+    float:right;
+    margin-top: 40px;
+    margin-right: 3%;
+}
+.about-us .info h2{
+    margin-top: 5%;
+    color:rgb(8, 8, 68) ;
+    opacity: .8;
+}
+.about-us .info p{
+    width: 85%;
+    text-align: left;
+    opacity: .8;
+}
+.about-us .info img{
+    width: 200px;
+    height: 50px;
+    float: right;
+    margin-right: 2%;
+}
+.about-us .info img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.content{
+    width: 100%;
+    height: auto;
+    margin-top: 2%;
+    
+}
+.content h1{
+    font-size:45px;
+    color:rgb(8, 8, 68) ;
+    margin-left: 15%;
+    margin-top: 3%;
+    opacity: .9;
+}
+.content .line{
+    width: 80px;
+    height: 3px;
+    background-color: teal;
+    margin-left: 15%;
+    margin-top: -10px;
+
+}
+.content .item-1{
+    width: 80%;
+    height:385px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-top: 2%;
+
+    margin-left: 10%;
+   
+}
+.content .item-1 ul{
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    min-width: 3500px;
+    list-style-type: none;
+}
+
+.content .item-1 li{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+     margin-left: 1%;
+     border: 3px solid #ddd;
+     border-radius: 10px;
+     margin-top:0%;
+     box-shadow: 2px #ddd;
+
+}
+.content .item-1 li img{
+    width: 100%;
+    height: 60%;
+    opacity: .8;
+
+}
+.content .item-1 li img:hover{
+    opacity: 1;
+
+}
+.content .item-1 li #icon{
+    position: absolute;
+    top: 23%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+
+}
+.content .item-1 li #icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.content .item-1 li #price{
+    color: blue;
+    float: right;
+    font-size: large;
+    opacity: .8;
+    margin-right: 5%;
+
+}
+.content .item-1 li #name{ 
+    opacity: .8;
+    color: blue;
+    font-size: large;
+    margin-left: 3%;
+ 
+}
+.content .item-1 li #desc{
+    opacity: .9;
+    margin-left: 3%;
+ 
+}
+.content .item-1 li button{
+    width: 45%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(103, 103, 165);
+    border-radius: 15px;
+    float: right;
+    margin-right: 4%;
+    
+
+}
+.content .item-1 li button:hover{
+    cursor: pointer;
+    background-color: rgb(103, 103, 165);
+    border: 1px solid white;
+    color: white;
+
+}
+
+
+.btn-1{
+    width: 120px;
+    height: 60px;
+    float: right;
+    margin-right: 10%;
+   
+   
+}
+.btn-1 img{
+    
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.btn-1 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.content .btn{
+    width: 120px;
+    height: 60px;
+    float: right;
+    margin-right: 5%;
+    margin-top: 3%;
+}
+.content .btn img{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.content .btn img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.contact-us{
+    width: 100%;
+    height: auto;
+    
+    margin-top: 20px;
+    overflow: hidden;
+}
+.contact-us h1{
+    font-size:45px;
+
+    color:rgb(8, 8, 68) ;
+    text-align: center;
+    margin-top: 3%;
+    opacity: .8;
+
+}
+.contact-us .line{
+    width: 80px;
+    height: 3px;
+    background-color: teal;
+    margin-left: 46%;
+    margin-top: -10px;
+
+}
+.contact-us .con-part{
+    width: 30%;
+    height: 250px;
+    
+    overflow: hidden;
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.contact-us .con-part img{
+    width: 60px;
+    height: 60px;
+    margin-top: 25%;
+    margin-left: 40%;
+
+}
+.contact-us .con-part img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.contact-us .con-part p{
+    color: blue;
+    text-align: center;
+}
+.end{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.end img{
+    width: 100%;
+    height: 100%;
+}
+.end img:hover{
+    transform: scale(1.1);
+}
+.parent{
+    position: absolute;
+    top: 750px;
+    right: 0px;
+    width: 800px;
+    height:385px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+     z-index: +3;
+   
+   
+}
+.parent ul{
+    height: 100%;
+    margin-top: 0px;
+    margin-left: 0px;
+    min-width: 3200px;
+    list-style-type: none;
+}
+
+.parent li{
+    width: 300px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+     margin-left: 1%;
+     border: 3px solid #ddd;
+     border-radius: 10px;
+     margin-top:0%;
+     box-shadow: 2px #ddd;
+
+}
+.parent li img{
+    width: 100%;
+    height: 60%;
+    
+
+}
+.parent li #icon{
+    position: absolute;
+    top: 23%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+
+}
+.parent li #icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.parent li #price{
+    color: blue;
+    float: right;
+    font-size: large;
+    opacity: .8;
+    margin-right: 5%;
+
+}
+.parent li #name{
+    opacity: .8;
+    color: blue;
+    font-size: large;
+    margin-left: 3%;
+ 
+}
+.parent li #desc{
+    opacity: .9;
+    margin-left: 3%;
+ 
+}
+.parent li button{
+    width: 45%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(103, 103, 165);
+    border-radius: 15px;
+    float: right;
+    margin-right: 4%;
+    
+
+}
+.parent li button:hover{
+    cursor: pointer;
+    background-color: rgb(103, 103, 165);
+    border: 1px solid white;
+    color: white;
+
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:570px){
+ .main-intro{
+     height: 250px;
+ }
+ .proudact .info{
+     width: 100%;
+     height: auto;
+     margin-top: 0;
+     text-align: center;
+ }
+ .proudact .info img{
+     margin-left: 10%;
+ }
+ .proudact .info h1{
+     margin-top: -3%;
+ }
+ .item{
+     display: none;
+ }
+ .about-us{
+     height: auto;
+     margin-top: -35%;
+ }
+ .about-us .line{
+    margin-left: 95px;
+ }
+ .about-us img{
+     width: 100%;
+     height: 250px;
+     margin-left: 0;
+ }
+ .about-us .info{
+     width: 100%;
+ }
+ .about-us .info h2{
+     text-align: center;
+     margin-top: -5%;
+ }
+ .about-us .info p{
+     width: 80%;
+     text-align: center;
+     margin-left: 35px;
+ }
+ .about-us .info img{
+     width: 100px;
+     height: 25px;
+     margin-top: -10px;
+ }
+ .content h1{
+     margin-top: 5%;
+ }
+ .content .items{
+     width: 100%;
+     height: auto;
+     margin-left: 0;
+ }
+ .content .items .item-part{
+     width: 90%;
+     margin-left: 5%;
+     margin-top: 1%;
+ }
+ .contact-us .line{
+     margin-left: 90px;
+ }
+ .contact-us .con-part{
+     margin-left: 1%;
+ }
+}
+
+@media only screen and (min-width:571px) and (max-width:760px){
+    .main-intro{
+        height: 250px;
+    }
+    .proudact .info{
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+        text-align: center;
+    }
+    .proudact .info img{
+        margin-left: 10%;
+    }
+    .proudact .info h1{
+        margin-top: -3%;
+    }
+    .item{
+        display: none;
+    }
+    .about-us{
+        height: auto;
+        margin-top: -35%;
+    }
+    .about-us .line{
+       margin-left: 95px;
+    }
+    .about-us img{
+        width: 100%;
+        height: 250px;
+        margin-left: 0;
+    }
+    .about-us .info{
+        width: 100%;
+    }
+    .about-us .info h2{
+        text-align: center;
+        margin-top: -5%;
+    }
+    .about-us .info p{
+        width: 80%;
+        text-align: center;
+        margin-left: 35px;
+    }
+    .about-us .info img{
+        width: 100px;
+        height: 25px;
+        margin-top: -10px;
+    }
+    .content h1{
+        margin-top: 5%;
+    }
+    .content .items{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+    .content .items .item-part{
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 1%;
+    }
+    .contact-us .line{
+        margin-left: 90px;
+    }
+    .contact-us .con-part{
+        margin-left: 1%;
+    }
+   }
+   
+   @media only screen and (min-width:761px) and (max-width:1200px){
+    
+    
+    .about-us{
+           margin-left: 0;
+       }
+       .about-us img{
+           margin-left: 5px;
+           width: 300px;
+           height: 200;
+       }
+       .about-us .info{
+           margin-right: 0;
+       }
+   }
+
+
+
+
+

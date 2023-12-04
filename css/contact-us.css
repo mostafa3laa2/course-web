@@ -1,0 +1,63 @@
+body{
+    width:100%;
+    height:100%;
+    margin: 0;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-color: rgb(36, 36, 83);
+}
+
+.header img{
+    width: 20%;
+    height: 100%;
+}
+.header ul{
+    list-style-type:none;
+    width: 70%;
+    float: right;
+    margin-top: 3%;
+}
+.header ul li a{
+    float: left;
+    font-size: 23px;
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+}
+.header ul li a:hover{
+    cursor: pointer;
+    color:rgb(157, 183, 184);
+}
+.header .log{
+    position: absolute;
+    top:35px;
+    right: 15px;
+    width: 25%;
+    height: 90%;
+    
+}
+.header .log ul{
+    list-style-type:none;
+    width: 70%;
+    float: right;
+    margin-top: 3%;
+
+
+}
+.header .log  ul li a{
+    float: left;
+    font-size: 21px;
+    color: white;
+    margin-left: 30px;
+    text-decoration: none;
+
+}
+.header .log  ul li a:hover{
+    cursor: pointer;
+    color: rgb(180, 205, 206);
+
+}

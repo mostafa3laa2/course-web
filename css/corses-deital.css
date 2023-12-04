@@ -1,0 +1,109 @@
+body{
+    width:100%;
+    height:100%;
+    margin: 0;
+}
+
+
+.intro{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.intro img{
+    width: 100%;
+    height: 100%;
+}
+.intro-p{
+    width: 450px;
+    height:200px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    border: 1px solid black;
+}
+.intro-p #name{
+    font-size: 45px;
+    color: white;
+  
+    
+}
+.intro-p #Price{
+    font-size: 40px;
+    color: white;
+    float: right;
+    margin-right: 5px;
+    margin-top: 1%;
+}
+.intro-p img{
+    width: 220px;
+    height:80px;
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+.desc{
+    width: 90%;
+    height: 300px;
+    overflow: hidden;
+    margin-left: 5%;
+
+}
+.info{
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+.desc h1{
+    font-size: 40px;
+    font-weight: bold;
+    color:rgb(8, 8, 68) ;
+    opacity: .8;
+}
+.desc p{
+    width: 90%;
+    font-size:20px;
+    color:rgb(8, 8, 68) ;
+    opacity: .9;
+}
+.info2{
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+}
+.info2 button{
+    width: 80%;
+    height: 60px;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    background-color: rgba(103, 103, 165,.8);
+    border: 3px solid rgba(103, 103, 165,.7) ;
+}
+.info2 button:hover{
+    cursor: pointer;
+    color: rgba(103, 103, 165,.8);
+    background-color: white;
+}
+.info2 #cart{
+    width: 80%;
+    height: 60px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    color:  rgba(103, 103, 165,.8);
+    background-color: white;
+    border: 3px solid rgba(103, 103, 165,.7) ;
+  
+}
+.info2 #cart:hover{
+    cursor: pointer;
+    color: white;
+    background-color: rgba(103, 103, 165,.8);
+  
+}

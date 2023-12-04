@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cor</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <!--Header-->
+    <div class="header">
+        <img src="image/Navigation.png" alt="">
+
+        <ul>
+            <li> <a href="index.html">  Home</a> </li>
+            <li> <a href="courses.html"> Courses </a> </li>
+            <li> <a href="contact.html"> Contact Us</a></li>
+            <li> <a href="about-us.html"> About Us</a></li>
+
+        </ul>
+
+        <div class="log">
+            <ul>
+                <li> <a href="login.html"> Login</a> </li>
+                <li> <a href="sign-up.html">Signup</a></li>
+    
+            </ul>
+        </div>
+    </div>
+    <!-- end of Header-->
+    <!--signup aera-->
+    <div class="parent">
+        <div class="left"></div>
+        <div class="signup_part">
+            <h1>WELCOME</h1>
+            <h1>TO</h1>
+            <h1>WeCan</h1>
+            <p id="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, eos dicta dolor porro .</p>
+            <h1>Signup</h1>
+            <div class="photo">
+                <img id="img" title="Upload Image" onclick="upload_img()" src="image/placeholder.png" alt="">
+                <img id="icon" title="Upload Image" onclick="upload_img()" src="image/icons8-add-image-50.png" alt="">
+            </div>
+            <input id="imge"  type="file" style="display: none;" onchange="show(event)">
+
+
+            <input type="text" id="name" onkeyup="valid_name()" placeholder="Full Name..">
+            <p id="err_name" style="color: red;text-align: center; font-size: large;display: none;">Cheak Your Name</p>
+
+            <input type="date" placeholder="Birth Date">
+
+            <input type="email" id="mail" onkeyup="vaild_mail()" placeholder="Your Email..">
+            <p id="err_mail" style="color: red;text-align: center; font-size: large;display: none;">Cheak Your Email</p>
+
+            <input type="tel" id="phone" onkeyup="valid_phone()" placeholder="Phone Number.">
+            <p id="err_phone" style="color: red;text-align: center; font-size: large;display: none;">Cheak Your Phone Number</p>
+
+            <input type="password" id="pass" onkeyup="valid_pass()" placeholder="Password">
+            <p id="err_pass" style="color: red;text-align: center; font-size: large;display: none;">Cheak Your Password</p>
+
+            <input type="password" id="conf" onkeyup="valid_conf()" placeholder="Confirm Password">
+            <p id="err_conf" style="color: red;text-align: center; font-size: large;display: none;"> Password  not Match</p>
+
+            <input type="text" placeholder="Addres..">
+            <label >Gender</label>
+            <select >
+               <option>female</option>
+               <option>male</option>
+            </select>
+            <br>
+   
+            <button>signup</button>
+  
+        </div>
+        <div class="right"></div>
+    </div>
+    <!--end of signup aera-->
+
+    <script>
+        function valid_name(){
+            let name=document.getElementById('name').value;
+            let err=document.getElementById('err_name');
+            reg=/^([a-zA-Z\s]{3,})$/i;
+            cheak=reg.test(name);
+            if(cheak){
+                err.style.display="none";
+            }else{
+                err.style.display="block";
+            }
+        }
+       
+        function vaild_mail(){
+            let mail=document.getElementById('mail').value;
+            let err=document.getElementById('err_mail');
+            reg=/^([a-z])+([\._-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/; 
+            cheak=reg.test(mail);
+            if(cheak){
+                err.style.display="none";
+            }else{
+                err.style.display="block";
+            }
+        }
+
+        function valid_phone(){
+            let phone=document.getElementById('phone').value;
+            let err=document.getElementById('err_phone');
+            reg=/^([0-9]{11})$/i;
+            cheak=reg.test(phone);
+            if(cheak){
+                err.style.display="none";
+            }else{
+                err.style.display="block";
+            }
+        }
+
+        function valid_pass(){
+            let pass=document.getElementById('pass').value;
+            let err=document.getElementById('err_pass');
+            reg=/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+]).{8,}$/i;
+            cheak=reg.test(pass);
+            if(cheak){
+                err.style.display="none";
+            }else{
+                err.style.display="block";
+            }
+        }
+
+        function valid_conf(){
+            let pass=document.getElementById('pass').value;
+            let conf=document.getElementById('conf').value;
+            let err=document.getElementById('err_conf');
+            if(pass != conf){
+                err.style.display="block";
+            }else{
+                err.style.display="none";
+            }
+        }
+          
+          function upload_img(){
+              let file=document.getElementById('imge');
+              file.click();
+          }
+
+          function show(event){
+              let readeer=new FileReader();
+              readeer.onload=function(){
+                  let img=document.getElementById('img');
+                  img.src=readeer.result;
+              }
+              readeer.readAsDataURL(event.target.files[0]);
+              
+          }
+    </script>
+
+</body>
+</html>

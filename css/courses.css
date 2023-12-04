@@ -1,0 +1,428 @@
+.content{
+    width: 100%;
+    height: auto;
+    
+}
+.nav{
+    width: 90%;
+    height: 50px;
+    margin-left: 5%;
+    margin-top: 3%;
+    background-color: #ddd;
+    border-radius: 15px;
+}
+.nav button{
+    width: 16.2%;
+    height: 100%;
+    text-align: center;
+    color: rgb(62, 62, 255);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-left: 2px;
+    
+}
+.nav button:hover{
+    cursor: pointer;
+    border: 2px solid blue;
+}
+.content-1{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.content-1 h1{
+    font-size: 45px;
+    color:rgb(8, 8, 68) ;
+    margin-left: 10%;
+    margin-top:5%;
+    opacity: .9;
+}
+.content-1 .line{
+    width: 80px;
+    height: 3px;
+    background-color: teal;
+    margin-left:10%;
+    margin-top: -10px;
+
+}
+.item-1{
+    width: 90%;
+    height:385px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    margin-left: 5%;
+   
+}
+.item-1 ul{
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+    min-width: 3600px;
+    list-style-type: none;
+}
+
+.item-1 li{
+    width: 340px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+     margin-left: 1%;
+     border: 3px solid #ddd;
+     border-radius: 10px;
+     margin-top:0%;
+     box-shadow: 2px #ddd;
+
+}
+.item-1 li img{
+    width: 100%;
+    height: 60%;
+    opacity: .8;
+
+}
+.item-1 li img:hover{
+    opacity: 1;
+
+}
+.item-1 li #icon{
+    position: absolute;
+    top: 23%;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+
+}
+.item-1 li #icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+
+}
+
+.item-1 li #price{
+    color: blue;
+    float: right;
+    font-size: large;
+    opacity: .8;
+    margin-right: 5%;
+
+}
+.item-1 li #name{ 
+    opacity: .8;
+    color: blue;
+    font-size: large;
+    margin-left: 3%;
+ 
+}
+.item-1 li #desc{
+    opacity: .9;
+    margin-left: 3%;
+ 
+}
+.item-1 li button{
+    width: 45%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(103, 103, 165);
+    border-radius: 15px;
+    float: right;
+    margin-right: 4%;
+    
+
+}
+.item-1 li button:hover{
+    cursor: pointer;
+    background-color: rgb(103, 103, 165);
+    border: 1px solid white;
+    color: white;
+
+}
+
+
+.btn-1{
+    width: 120px;
+    height: 60px;
+    float: right;
+    margin-right: 5%;
+   
+   
+}
+.btn-1 img{
+    
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.btn-1 img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+
+.content h1{
+    font-size: 45px;
+    color:rgb(8, 8, 68) ;
+    margin-left: 10%;
+    margin-top:5%;
+    opacity: .9;
+}
+.content .line{
+    width: 80px;
+    height: 3px;
+    background-color: teal;
+    margin-left: 10%;
+    margin-top: -10px;
+
+}
+
+
+.content .items{
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    
+    
+    margin-left: 7%;
+}
+.content .items .item-part{
+    width: 28%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+     margin-left: 3%;
+     border: 3px solid #ddd;
+     border-radius: 10px;
+     margin-top: 3%;
+}
+.content .items .item-part img{
+    width: 100%;
+    height: 60%;
+    opacity: .8;
+}
+.content .items .item-part img:hover{
+    opacity: 1;
+
+}
+.content .items .item-part #icon{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    width: 80px;
+    height: 80px;
+}
+.content .items .item-part #icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.content .items .item-part #price{
+    color: blue;
+    float: right;
+    font-size: large;
+    opacity: .8;
+    margin-right: 5%;
+
+}
+.content .items .item-part #name{
+  opacity: .8;
+   color: blue;
+   font-size: large;
+   margin-left: 3%;
+}
+.content .items .item-part #desc{
+   opacity: .9;
+   margin-left: 3%;
+}
+.content .items .item-part button{
+    width: 35%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(103, 103, 165);
+    border-radius: 15px;
+    float: right;
+    margin-right: 3%;
+}
+.content .items .item-part button:hover{
+    cursor: pointer;
+    background-color: rgb(103, 103, 165);
+    border: 1px solid white;
+    color: white;
+
+}
+
+.btn{
+    width: 120px;
+    height: 60px;
+    float: right;
+   
+   
+}
+.btn img{
+    
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.btn img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.contact-us{
+    width: 100%;
+    height: auto;
+    
+    margin-top: 100px;
+    overflow: hidden;
+}
+.contact-us h1{
+    font-size: xx-large;
+    color:rgb(8, 8, 68) ;
+    text-align: center;
+    margin-top: 5%;
+    opacity: .9;
+
+}
+.contact-us .line{
+    width: 100px;
+    height: 3px;
+    background-color: teal;
+    margin-left: 46%;
+    margin-top: -10px;
+
+}
+.contact-us .con-part{
+    width: 30%;
+    height: 250px;
+    
+    overflow: hidden;
+    float: left;
+    margin-left: 3%;
+    margin-top: 2%;
+}
+.contact-us .con-part img{
+    width: 60px;
+    height: 60px;
+    margin-top: 25%;
+    margin-left: 40%;
+
+}
+.contact-us .con-part img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.contact-us .con-part p{
+    color: blue;
+    text-align: center;
+}
+.end{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.end img{
+    width: 100%;
+    height: 100%;
+}
+.end img:hover{
+    transform: scale(1.1);
+}
+
+
+.item{
+ width: 70%;
+ height: 400px;
+ position: absolute;
+ right:0px;
+ top: 800px;
+ float: right;
+ overflow: hidden; 
+ z-index: +3; 
+
+}
+ .item .item-part{
+    position: relative;
+    width: 30%;
+    height: 350px;
+    float: left;
+    margin-left: 2%;
+    border: 3px solid #ddd;
+    border-radius: 7px;
+    overflow: hidden;
+}
+ .item .item-part img{
+    width: 100%;
+    height: 55%;
+    
+}
+ .item .item-part img:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+ .item .item-part #icon{
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    width: 20%;
+    height: 20%;
+    
+}
+ .item .item-part #icon:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+ .item .item-part #price{
+    float: right;
+    font-size: 25px;
+    font:bold;
+    color: indigo;
+    margin-top: 2%;
+}
+ .item .item-part #name{
+    opacity: .8;
+    font-size: 25px;
+    margin-top:2%;
+
+}
+.item .item-part #desc{
+    font-size:large;
+    opacity: .8;
+}
+ .item .item-part button{
+    width: 35%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(103, 103, 165);
+    border-radius: 15px;
+    float: right;
+    margin-right: 3%;
+    
+}
+ .item .item-part button:hover{
+    cursor: pointer;
+    background-color: rgb(103, 103, 165);
+    border: 1px solid white;
+    color: white;
+ }
+ .btn{
+     margin:2%;
+ }
+
+
+
+ .end{
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    margin-top: 3%;
+}
+.end img{
+    width: 100%;
+    height: 100%;
+}
+.end img:hover{
+    transform: scale(1.1);
+}

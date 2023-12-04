@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+    <div id="p" class="item-1">
+    <ul>
+        <li >
+            <img src="image/pexels-julia-m-cameron-4143800.jpg" alt="">
+            <img id="icon" src="image/ic_play_circle_outline_24px.png" alt="">
+            <p id="price">$19.99</p>
+            <p id="name"> Courses Name</p>
+            <p id="desc">This is small text direction about the courses</p>
+             <button>Details-></button>
+    
+        </li>
+
+        <li>
+            <img src="image/pexels-julia-m-cameron-4143800.jpg" alt="">
+            <img id="icon" src="image/ic_play_circle_outline_24px.png" alt="">
+            <p id="price">$19.99</p>
+            <p id="name"> Courses Name</p>
+            <p id="desc">This is small text direction about the courses</p>
+            <button>Details-></button>
+    
+        </li>
+
+        <li >
+            <img src="image/pexels-julia-m-cameron-4143800.jpg" alt="">
+            <img id="icon" src="image/ic_play_circle_outline_24px.png" alt="">
+            <p id="price">$19.99</p>
+            <p id="name"> Courses Name</p>
+            <p id="desc">This is small text direction about the courses</p>
+            <button>Details-></button>
+    
+        </li>
+
+        <li >
+            <img src="image/pexels-julia-m-cameron-4143800.jpg" alt="">
+            <img id="icon" src="image/ic_play_circle_outline_24px.png" alt="">
+            <p id="price">$19.99</p>
+            <p id="name"> Courses Name</p>
+            <p id="desc">This is small text direction about the courses</p>
+            <button>Details-></button>
+    
+        </li>
+
+
+        <li >
+            <img src="image/pexels-julia-m-cameron-4143800.jpg" alt="">
+            <img id="icon" src="image/ic_play_circle_outline_24px.png" alt="">
+            <p id="price">$19.99</p>
+            <p id="name"> Courses Name</p>
+            <p id="desc">This is small text direction about the courses</p>
+            <button>Details-></button>
+    
+        </li>
+
+
+        <li >
+            <img src="image/pexels-julia-m-cameron-4143800.jpg" alt="">
+            <img id="icon" src="image/ic_play_circle_outline_24px.png" alt="">
+            <p id="price">$19.99</p>
+            <p id="name"> Courses Name</p>
+            <p id="desc">This is small text direction about the courses</p>
+            <button>Details-></button>
+    
+        </li>
+
+
+        <li >
+            <img src="image/pexels-julia-m-cameron-4143800.jpg" alt="">
+            <img id="icon" src="image/ic_play_circle_outline_24px.png" alt="">
+            <p id="price">$19.99</p>
+            <p id="name"> Courses Name</p>
+            <p id="desc">This is small text direction about the courses</p>
+            <button>Details-></button>
+    
+        </li>
+
+        <li >
+            <img src="image/pexels-julia-m-cameron-4143800.jpg" alt="">
+            <img id="icon" src="image/ic_play_circle_outline_24px.png" alt="">
+            <p id="price">$19.99</p>
+            <p id="name"> Courses Name</p>
+            <p id="desc">This is small text direction about the courses</p>
+            <button>Details-></button>
+    
+        </li>
+
+
+        <li >
+            <img src="image/pexels-julia-m-cameron-4143800.jpg" alt="">
+            <img id="icon" src="image/ic_play_circle_outline_24px.png" alt="">
+            <p id="price">$19.99</p>
+            <p id="name"> Courses Name</p>
+            <p id="desc">This is small text direction about the courses</p>
+            <button>Details-></button>
+    
+        </li>
+
+
+
+
+
+    </ul>
+</div>
+
+<div class="btn-1">
+        
+    <img onclick="prave()" src="image/Group 20.png " alt="">
+    <img onclick="next()" src="image/Group 19.png" alt="">
+</div>
+
+
+
+<div class="nav">
+    <button>Web Development</button>
+    <button>Design</button>
+    <button>Economic</button>
+    <button>Business</button>
+    <button>Network</button>
+    <button>Databases</button>
+</div> 
+
+
+<p id="clock"></p>
+
+<script>
+
+        var sasa=1;
+        
+        function next(){
+            sasa+=100;
+            if(sasa >=2300){
+                sasa=1;
+            }
+            console.log(sasa)
+
+            let parent=document.getElementById('p');
+            parent.scroll({left:sasa,behavior:'smooth'})
+        }
+
+        function prave(){
+            sasa-=100;
+            if(sasa <1){
+                sasa=1;
+            }
+           console.log(sasa)
+            let parent=document.getElementById('p');
+            parent.scroll({left:sasa,behavior:'smooth'})
+
+
+        }
+
+
+</script>
+</body>
+</html>
+
+
